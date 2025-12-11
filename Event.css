@@ -19,8 +19,8 @@ header {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -284,82 +284,81 @@ img {
     white-space: nowrap;
     font-size: inherit;
 }
-/* Media Queries for Responsiveness */
 
-/* Mobile (up to 768px) */
 @media (max-width: 600px) {
     header {
-        padding: 2rem;  /* Reduce header padding */
+        padding: 2rem;  /
     }
     .banner {
-        position: static;  /* Remove absolute positioning for mobile */
+        position: static;  
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column;  /* Stack logo and title */
+                flex-direction: column;  
         padding: 1rem;
     }
     .banner h1 {
-        font-size: 1.5rem;  /* Smaller title */
+        font-size: 1.5rem;  
         -webkit-animation: none;
-                animation: none;  /* Disable typing animation on small screens for readability */
+                animation: none; 
     }
     nav ul {
-        position: static;  /* Remove absolute positioning */
+        position: static;  
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column;  /* Stack nav items */
+                flex-direction: column; 
         padding: 1rem;
         margin-top: 0;
     }
     nav li {
-        margin: 0.5rem 0;  /* Vertical spacing */
+        margin: 0.5rem 0;  
     }
     nav a {
-        margin: 0;  /* Remove margins */
+        margin: 0;  
     }
     main {
-        margin: 1rem;  /* Reduce margins */
+        margin: 1rem;  
         padding: 0.5rem;
     }
     .event-card, .resource-category, form {
-        margin: 1rem 0;  /* Adjust margins */
+        margin: 1rem 0;  
     }
     .btn, .box button {
-        width: 100%;  /* Full-width buttons */
+        width: 100%;  
         padding: 0.75rem;
     }
     footer {
-        padding: 0.5rem;  /* Smaller footer */
+        padding: 0.5rem;  
     }
     img {
-        width: 3rem;  /* Smaller logo */
+        width: 3rem;  
     }
     .box form {
-        padding: 1rem;  /* Adjust form padding */
+        padding: 1rem;  /
     }
 }
 
-/* Tablet (769px to 1024px) */
+
 @media (min-width: 769px) and (max-width: 1024px) {
     header {
-        padding: 3rem;  /* Medium padding */
+        padding: 3rem;  
     }
     nav ul {
-        left: 50rem;  /* Adjust nav position for tablets */
+        left: 50rem;  /
     }
     .event-card {
-        display: inline-block;  /* Side-by-side cards */
-        width: 48%;  /* Two per row */
+        display: inline-block;  
+        width: 48%;  
         margin: 1rem 1%;
     }
     main {
-        margin: 1.5rem auto;  /* Medium margins */
+        margin: 1.5rem auto;  
     }
     .banner h1 {
-        font-size: 2rem;  /* Medium title size */
+        font-size: 2rem;  
     }
 }
 
 /* Desktop (1025px+) - Default styles apply */
+
