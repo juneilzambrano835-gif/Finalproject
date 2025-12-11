@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/png" href="file:///Z:/MM540/zambranoJH/FinalProject/images/c1a088a9-0db2-4568-baf1-e111ba7f07c0.jpg">
+    <link rel="stylesheet" href="Z:\MM540\zambranoJH\FinalProject\style\Resources.css">
+    <title>student-centered website</title>
+    
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="file:///Z:/MM540/zambranoJH/FinalProject/images/bb8e0721-a6a8-405e-b884-bf58c8b20b9f.jpg" alt="University Logo" class="logo">
+            <h1>University of Cebu</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Event.html">Events</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="feedback.html">Comment</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>All Student Resources</h2>
+            <div class="filter">
+                <button onclick="toggleCategory('library')">Library</button>
+                <button onclick="toggleCategory('clubs')">Clubs</button>
+            </div>
+            <div id="library" class="resource-category">
+                <h3>Library Resources</h3>
+                <ul>
+                    <li><a href="#" class="btn">Online Catalog</a></li>
+                    <li><a href="#" class="btn">Research Databases</a></li>
+                    <li><a href="#" class="btn">Study Guides</a></li>
+                </ul>
+            </div>
+            <div id="clubs" class="resource-category" style="display: none;">
+                <h3>Clubs & Organizations</h3>
+                <ul>
+                    <li><a href="#" class="btn">Student Body Organizations</a></li>
+                    <li><a href="#" class="btn">Club of Esports/sports</a></li>
+                    <li><a href="#" class="btn">Cultural Societies</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 University of Cebu. All rights reserved.</p>
+    </footer>
+    <script src="Z:\MM540\zambranoJH\FinalProject\script\Resources.js"></script>
+</body>
+</html>
