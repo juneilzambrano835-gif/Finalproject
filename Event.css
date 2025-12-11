@@ -33,6 +33,11 @@ header {
 
 
 }
+.banner h1 {
+    animation: typing 2s steps(25) infinite alternate-reverse;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
 
 
 
@@ -284,4 +289,5 @@ img {
     justify-content: center;
     -webkit-animation: animate 10s linear infinite;
     animation: animate 10s linear infinite;
+
 }
