@@ -38,7 +38,25 @@ header {
     text-wrap: nowrap;
     overflow: hidden;
 }
+@-webkit-keyframes typing {
+    from {
+        width: 0;
+    }
 
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
 
 
 .logo {
@@ -291,3 +309,4 @@ img {
     animation: animate 10s linear infinite;
 
 }
+
