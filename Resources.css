@@ -335,7 +335,7 @@ img {
         width: 3rem;  
     }
     .box form {
-        padding: 1rem;  /
+        padding: 1rem;  
     }
 }
 
@@ -345,7 +345,7 @@ img {
         padding: 3rem;  
     }
     nav ul {
-        left: 50rem;  /
+        left: 50rem;  
     }
     .event-card {
         display: inline-block;  
@@ -359,6 +359,7 @@ img {
         font-size: 2rem;  
     }
 }
+
 
 
 
