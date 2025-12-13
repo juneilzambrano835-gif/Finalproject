@@ -477,7 +477,7 @@ img {
 /* iPad Pro (1024px to 1366px) - Larger screens, more space */
 @media (min-width: 1024px) and (max-width: 1366px) {
     header {
-        padding: 4rem;  /* More padding for larger screen */
+        padding: 6rem;  /* More padding for larger screen */
     }
     .banner h1 {
         font-size: 2.8rem;  /* Larger title */
@@ -514,3 +514,4 @@ img {
         margin: 1rem 1%;
     }
 }
+
