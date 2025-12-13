@@ -481,6 +481,8 @@ img {
     }
     .banner h1 {
         font-size: 2.8rem;  /* Larger title */
+        position: absolute;
+        top: 1rem;
     }
     nav ul {
         right: 6rem;  /* Adjust position */
@@ -514,4 +516,5 @@ img {
         margin: 1rem 1%;
     }
 }
+
 
