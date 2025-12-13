@@ -360,5 +360,150 @@ img {
     }
 }
 
-/* Desktop (1025px+) - Default styles apply */
+/* Existing styles here... */
+
+/* Media Queries for iPad Responsiveness */
+
+/* General iPad (768px to 1024px) - Covers most iPads in portrait/landscape */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        padding: 3rem;  /* Medium header padding for iPad */
+    }
+    .banner {
+        position: static;  /* Remove absolute for better flow */
+        flex-direction: column;  /* Stack logo and title on smaller iPad views */
+        padding: 1rem;
+    }
+    .banner h1 {
+        font-size: 2rem;  /* Readable title size */
+        animation: typing 2s steps(25) infinite alternate-reverse;  /* Keep typing if space allows */
+    }
+    nav ul {
+        position: static;  /* Remove absolute positioning */
+        flex-direction: row;  /* Keep horizontal on landscape, but adjust for portrait below */
+        padding: 1rem;
+        margin-top: 0;
+        justify-content: space-around;  /* Even spacing */
+    }
+    nav li {
+        margin: 0 0.5rem;  /* Reduce margins */
+    }
+    nav a {
+        margin: 0;  /* Clean up margins */
+        font-size: 1.1rem;  /* Slightly larger for touch */
+    }
+    main {
+        margin: 1.5rem auto;  /* Balanced margins */
+        padding: 1rem;
+    }
+    .event-card {
+        display: inline-block;  /* Side-by-side in landscape */
+        width: 48%;  /* Two cards per row */
+        margin: 1rem 1%;
+    }
+    .btn, .box button {
+        padding: 0.75rem 1.5rem;  /* Larger touch targets */
+        font-size: 1.1rem;
+    }
+    footer {
+        padding: 1rem;  /* Standard padding */
+    }
+    img {
+        width: 4rem;  /* Medium logo size */
+    }
+    .box form {
+        max-width: 400px;  /* Constrain form width */
+        padding: 1.5rem;
+    }
+}
+
+/* iPad Portrait Mode (height > width, typically 768px wide) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .banner {
+        flex-direction: column;  /* Ensure stacking */
+    }
+    nav ul {
+        flex-direction: column;  /* Stack nav vertically in portrait */
+        align-items: center;
+    }
+    nav li {
+        margin: 0.5rem 0;  /* Vertical spacing */
+    }
+    .event-card {
+        display: block;  /* Stack cards vertically in portrait */
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .btn, .box button {
+        width: 100%;  /* Full-width for easy tapping */
+    }
+    h2 {
+        font-size: 1.8rem;  /* Slightly smaller headings */
+    }
+}
+
+/* iPad Landscape Mode (width > height, typically 1024px wide) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+        flex-direction: row;  /* Horizontal nav in landscape */
+        justify-content: flex-end;  /* Align to right for space */
+        position: absolute;  /* Re-enable if needed, but adjust top/left */
+        top: 2rem;
+        right: 2rem;  /* Move to right side */
+    }
+    .event-card {
+        width: 48%;  /* Two per row */
+    }
+    main {
+        display: flex;  /* Optional: Flex layout for sections */
+        flex-wrap: wrap;
+    }
+    section {
+        flex: 1;  /* Equal width sections */
+        min-width: 300px;  /* Prevent too narrow */
+    }
+}
+
+/* iPad Pro (1024px to 1366px) - Larger screens, more space */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    header {
+        padding: 4rem;  /* More padding for larger screen */
+    }
+    .banner h1 {
+        font-size: 2.5rem;  /* Larger title */
+    }
+    nav ul {
+        right: 3rem;  /* Adjust position */
+    }
+    .event-card {
+        width: 30%;  /* Three cards per row on Pro */
+        margin: 1rem 1.5%;
+    }
+    main {
+        max-width: 1400px;  /* Wider content area */
+    }
+    .box form {
+        max-width: 500px;  /* Larger form */
+    }
+    img {
+        width: 5rem;  /* Larger logo */
+    }
+}
+
+/* iPad Pro Portrait (1024px wide) */
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+    .event-card {
+        width: 48%;  /* Two per row in portrait */
+    }
+}
+
+/* iPad Pro Landscape (1366px wide) */
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+    .event-card {
+        width: 23%;  /* Four per row if space allows */
+        margin: 1rem 1%;
+    }
+}
+
+
 
