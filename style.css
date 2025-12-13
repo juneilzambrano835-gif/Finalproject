@@ -449,7 +449,7 @@ img {
         justify-content: flex-end;  /* Align to right for space */
         position: absolute;  /* Re-enable if needed, but adjust top/left */
         top: 2rem;
-        right: 2rem;  /* Move to right side */
+        right: 5rem;  /* Move to right side */
     }
     .event-card {
         width: 48%;  /* Two per row */
@@ -470,10 +470,10 @@ img {
         padding: 4rem;  /* More padding for larger screen */
     }
     .banner h1 {
-        font-size: 2.5rem;  /* Larger title */
+        font-size: 2.8rem;  /* Larger title */
     }
     nav ul {
-        right: 3rem;  /* Adjust position */
+        right: 6rem;  /* Adjust position */
     }
     .event-card {
         width: 30%;  /* Three cards per row on Pro */
@@ -483,7 +483,7 @@ img {
         max-width: 1400px;  /* Wider content area */
     }
     .box form {
-        max-width: 500px;  /* Larger form */
+        max-width: 700px;  /* Larger form */
     }
     img {
         width: 5rem;  /* Larger logo */
@@ -504,6 +504,7 @@ img {
         margin: 1rem 1%;
     }
 }
+
 
 
 
